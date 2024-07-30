@@ -15,7 +15,7 @@ blue = (50, 153, 213)
 dis_width = 800
 dis_height = 600
 
-# Inicialização da tela
+# Inicialização da janela
 dis = pygame.display.set_mode((dis_width, dis_height))
 pygame.display.set_caption('Snake Game by Hersnold')
 
@@ -122,8 +122,8 @@ def gameLoop():
                     Length_of_snake = 1
 
         our_snake(snake_block, snake_List)
-        message(f"Score: {score}", white, 0, 0)
-        message(f"Lives: {lives}", white, 0, 30)
+        message(f"Pontuação: {score}", white, 0, 0)
+        message(f"Vidas: {lives}", white, 0, 30)
         pygame.display.update()
 
         if x1 == foodx and y1 == foody:
